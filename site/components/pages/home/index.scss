@@ -1,7 +1,9 @@
 html {
   &.home {
     body {
-      
+      .slider {
+        @include slider;
+      }
     }
   }
 }

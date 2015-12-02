@@ -1,0 +1,12 @@
+@mixin slider {
+  @include full-page;
+  position: relative;
+
+  .figure {
+    @include full-page;
+    @include background-image(white);
+    //background-image: url(/assets/images/haiku-1.jpg);
+    //background-image: url(/assets/images/dsc_0007.jpg);
+    background-image: url(/assets/images/nagy4.jpg);
+  }
+}

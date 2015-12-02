@@ -1,3 +1,13 @@
 {
-  "title": "Home"
+  "title": "Home",
+  "slider": [
+    {
+      "title": "Haiku head",
+      "image": {
+        "title": "haiku head",
+        "name": "haiku-1",
+        "extension": ".jpg"
+      }
+    }
+  ]
 }

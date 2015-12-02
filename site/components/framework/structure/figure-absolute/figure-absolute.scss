@@ -1,0 +1,9 @@
+@mixin figure-absolute {
+  position: relative;
+
+  .img {
+    position: absolute;
+    top: -1000px;
+    left: -800px;
+  }
+}
