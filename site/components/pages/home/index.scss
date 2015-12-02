@@ -4,6 +4,12 @@ html {
       .slider {
         @include slider;
       }
+
+      .bullets {
+        // Bullets should be present on the page otherwise there's no navigation
+        // - we will hide and use scroll/click only
+        display: none;
+      }
     }
   }
 }

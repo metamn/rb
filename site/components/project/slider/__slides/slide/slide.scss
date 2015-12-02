@@ -1,0 +1,16 @@
+@mixin slide {
+  @include transition(transform);
+  @include full-page;
+  @include background-image(transparent);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  .figure {
+    display: none;
+  }
+}

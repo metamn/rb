@@ -4,4 +4,7 @@
   {% set slider = slider %}
   {% include '../../project/slider/slider.html.swig' %}
 
+  {% set bullets = slider %}
+  {% include '../../project/slider/__bullets/slider__bullets.html.swig' %}
+
 {% endblock %}

@@ -1,0 +1,1 @@
+setBackgroundImage('.slider .slide');

@@ -1,6 +1,12 @@
 // Read the `figure` element's responsive images and breakpoints
-// Set as background image with `matchMedia` coming from `Picturefill`
+// - set as background image with `matchMedia` coming from `Picturefill`
+// - example: setbackgroundImage('.slider .slides') => all .slides will have a background image set
 var setBackgroundImage = function(elementID) {
+  var elements = document.querySelectorAll(elementID);
+
+  for (var i = 0; i < elements.length; i++) {
+    responsiveImageURL(elements[i], setResponsiveBackgroundImage);
+  }
 
   // Set a responsive background image using `mathcMedia`
   function setResponsiveBackgroundImage(element, image, breakpoint, retina) {
@@ -15,6 +21,4 @@ var setBackgroundImage = function(elementID) {
       element.style.backgroundImage = "url('" + image + "')";
     }
   }
-
-  responsiveImageURL(elementID, setResponsiveBackgroundImage);
 };

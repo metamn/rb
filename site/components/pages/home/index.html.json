@@ -4,9 +4,28 @@
     {
       "title": "Haiku head",
       "image": {
-        "title": "haiku head",
+        "title": "Haiku head",
         "name": "haiku-1",
-        "extension": ".jpg"
+        "extension": ".jpg",
+        "onesize": "desktop"
+      }
+    },
+    {
+      "title": "Play with the tormented soul's mirror",
+      "image": {
+        "title": "Play with the tormented soul's mirror",
+        "name": "nagy4",
+        "extension": ".jpg",
+        "onesize": "desktop"
+      }
+    },
+    {
+      "title": "Erotika",
+      "image": {
+        "title": "Erotika",
+        "name": "dsc_0007",
+        "extension": ".jpg",
+        "onesize": "desktop"
       }
     }
   ]
