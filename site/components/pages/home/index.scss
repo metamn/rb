@@ -16,11 +16,6 @@ html {
         @include about;
       }
 
-      .parallax {
-        @include parallax;
-        display: none;
-      }
-
       @include home--landscape;
       @include home--portrait;
     }

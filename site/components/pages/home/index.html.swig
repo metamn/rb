@@ -7,9 +7,8 @@
   {% set slider = slider %}
   {% include '../../project/slider/slider.html.swig' %}
 
+  {% set about = about %}
   {% include '../../project/about/about.html.swig' %}
 
-  {% set parallax = parallax %}
-  {% include '../../project/parallax/parallax.html.swig' %}
-
+  
 {% endblock %}

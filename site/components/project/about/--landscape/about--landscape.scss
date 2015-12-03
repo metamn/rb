@@ -1,0 +1,6 @@
+@mixin about--landscape {
+  @include landscape {
+    justify-content: center;
+    align-items: center;
+  }
+}
