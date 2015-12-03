@@ -38,5 +38,15 @@
         "onesize": "desktop"
       }
     }
+  ],
+  "parallax": [
+    {
+      "title": "Background layer",
+      "class": "background"
+    },
+    {
+      "title": "Foreground layer",
+      "class": "foreground"
+    }
   ]
 }

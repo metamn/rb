@@ -10,6 +10,15 @@ html {
         // - we will hide and use scroll/click only
         display: none;
       }
+
+      .about {
+        @include about;
+      }
+
+      .parallax {
+        @include parallax;
+        display: none;
+      }
     }
   }
 }

@@ -7,4 +7,9 @@
   {% set bullets = slider %}
   {% include '../../project/slider/__bullets/slider__bullets.html.swig' %}
 
+  {% include '../../project/about/about.html.swig' %}
+
+  {% set parallax = parallax %}
+  {% include '../../project/parallax/parallax.html.swig' %}
+
 {% endblock %}

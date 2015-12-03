@@ -1,0 +1,15 @@
+// Parallax
+//
+// Parallax sliding useing pure CSS from an idea of [Keith Clark](http://keithclark.co.uk/articles/pure-css-parallax-websites/).
+//
+// Styleguide parallax
+@mixin parallax {
+  display: flex;
+
+  height: 80vh;
+  background: lightgray;
+
+  &__slides {
+    @include parallax__slides(80vh);
+  }
+}

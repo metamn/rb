@@ -1,0 +1,10 @@
+@mixin about {
+  @include full-page;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+}
