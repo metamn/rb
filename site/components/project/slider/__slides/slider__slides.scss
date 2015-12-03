@@ -3,6 +3,10 @@
   height: 100%;
   overflow: hidden;
 
+  .title {
+    padding-left: $lem;
+  }
+
   .slide {
     @include slide;
   }

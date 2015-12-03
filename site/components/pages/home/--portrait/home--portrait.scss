@@ -1,13 +1,11 @@
 @mixin home--portrait {
   @include portrait {
     .slider__bullets {
-      justify-content: flex-start;
-      padding-left: $lem;
+      justify-content: flex-end;
     }
 
-    .slider {
-      position: relative;
-      top: -$lem;
+    .slide {
+      top: $lem;
     }
   }
 }

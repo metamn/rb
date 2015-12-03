@@ -7,6 +7,9 @@ html {
 
       .slider__bullets {
         @include slider__bullets;
+        position: relative;
+        top: $lem;
+        z-index: 1;
       }
 
       .about {
