@@ -19,6 +19,7 @@ html {
       }
 
       @include home--landscape;
+      @include home--portrait;
     }
   }
 }
