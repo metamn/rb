@@ -16,6 +16,10 @@ html {
         @include about;
       }
 
+      .works {
+        @include works;
+      }
+
       @include home--landscape;
       @include home--portrait;
     }

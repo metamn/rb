@@ -1,0 +1,12 @@
+@mixin works {
+  display: flex;
+  justify-content: space-between;
+
+  &__years {
+    @include works__years;
+  }
+
+  &__techniques {
+    @include works__techniques;
+  }
+}

@@ -10,5 +10,8 @@
   {% set about = about %}
   {% include '../../project/about/about.html.swig' %}
 
-  
+  {% set works = works %}
+  {% set years = years %}
+  {% set techniques = techniques %}
+  {% include '../../project/works/works.html.swig' %}
 {% endblock %}
