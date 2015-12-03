@@ -11,7 +11,11 @@
         "title": "Nightfall",
         "name": "nightfall-8w1",
         "extension": ".jpg",
-        "onesize": "mobile"
+        "onesize": "mobile",
+        "link": {
+          "title": "Nightfall",
+          "url": "nightfall"
+        }
       }
     },
     {
@@ -19,10 +23,14 @@
       "years": ["2014", "2015"],
       "techniques": ["painting"],
       "thumbnail": {
-        "title": "Haiku head",
+        "title": "Haiku heads",
         "name": "haiku-1",
         "extension": ".jpg",
-        "onesize": "mobile"
+        "onesize": "mobile",
+        "link": {
+          "title": "Haiku Heads",
+          "url": "haiku-heads"
+        }
       }
     },
     {
@@ -33,7 +41,10 @@
         "title": "Play with the tormented soul's mirror",
         "name": "nagy4",
         "extension": ".jpg",
-        "onesize": "mobile"
+        "onesize": "mobile",
+        "link": {
+          "title": "Play with the tormented soul's mirror"
+        }
       }
     },
     {
@@ -44,7 +55,11 @@
         "title": "Erotika",
         "name": "dsc_0007",
         "extension": ".jpg",
-        "onesize": "mobile"
+        "onesize": "mobile",
+        "link": {
+          "title": "Erotika",
+          "url": "erotika"
+        }
       }
     }
   ],

@@ -1,0 +1,14 @@
+@mixin works--mobile {
+  @include mobile {
+    &__years,
+    &__techniques {
+      flex-basis: calc(50% - #{$lem * 2});
+      order: 1;
+    }
+
+    &__thumbs {
+      flex-basis: 100%;
+      order: 2;
+    }
+  }
+}
