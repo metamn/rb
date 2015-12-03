@@ -5,12 +5,16 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 
   cursor: pointer;
 
   .figure {
     display: none;
+  }
+
+  &__title {
+    display: flex;
+    padding: 0 0 $lem * 2 $lem * 2;
   }
 }
