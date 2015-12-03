@@ -1,15 +1,16 @@
 html {
   &.home {
     body {
-      .slider {
-        @include slider;
-      }
-
       .slider__bullets {
         @include slider__bullets;
         position: relative;
         top: $lem * 2;
         z-index: 1;
+      }
+
+      .slider {
+        @include slider;
+        height: calc(100vh - #{$lem});
       }
 
       .about {
@@ -20,7 +21,6 @@ html {
         @include works;
       }
 
-      @include home--landscape;
       @include home--portrait;
     }
   }
