@@ -1,0 +1,8 @@
+@mixin home--landscape {
+  @include landscape {
+    .slider__bullets {
+      position: relative;
+      top: $lem * 2;
+    }
+  }
+}
