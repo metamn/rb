@@ -4,23 +4,29 @@
 // On small screens items display below each other, on larger screens in rows and columns.
 //
 // Styleguide grid
-@mixin grid($item, $margin, $basis: none) {
+@mixin grid($item_class, $items_per_column, $nr_of_items, $margin-right, $margin_bottom) {
   display: flex;
   flex-wrap: wrap;
 
-  #{$item} {
-    flex-grow: 1;
+  @if ($items_per_column >= $nr_of_items) {
+    justify-content: space-between;
+  }
 
-    @if ($basis != none) {
-      flex-basis: $basis;
+  $item_width: percentage(1 / $items_per_column);
+
+  #{$item_class} {
+    flex-basis: calc(#{$item_width} - #{$margin_right});
+    margin-right: $margin_right;
+    margin-bottom: $margin_bottom;
+
+    @for $i from 1 to $nr_of_items {
+      &:nth-of-type(#{$i}n) {
+        margin-right: $margin-right;
+      }
     }
 
-    + #{$item} {
-      margin-left: $margin;
+    &:nth-of-type(#{$items_per_column}n) {
+      margin-right: 0;
     }
-    margin-bottom: $margin;
-
-
-    @include grid--mobile($item);
   }
 }

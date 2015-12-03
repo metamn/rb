@@ -1,5 +1,7 @@
 @mixin works--mobile {
   @include mobile {
+    flex-wrap: wrap;
+    
     &__years,
     &__techniques {
       flex-basis: calc(50% - #{$lem * 2});
