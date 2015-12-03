@@ -2,6 +2,11 @@
   padding: $lem;
   @include works__thumbs--grid;
 
+  .title {
+    display: flex;
+    flex-basis: 100%;
+  }
+
   .thumb {
     @include thumb;
   }

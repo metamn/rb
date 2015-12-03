@@ -1,3 +1,7 @@
 @mixin works__years {
   padding: $lem;
+
+  .title {
+    display: flex;
+  }
 }
