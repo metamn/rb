@@ -6,17 +6,36 @@ var slider = function(slide, bullets) {
   var pos = 0;
   var direction = 'prev';
 
+
+  // callback for the current slide
+  function callbackCurrentSlide(slide) {
+    var color = slide.dataset.titlecolor;
+    console.log('c:' + color);
+    if (color) {
+      slide.style.color = color;
+    }
+  }
+
+
   // - move out of viewport all inactive slides
+  // - we do these manually instead of loading Modernizr which is not used elsewhere
+  // - from https://github.com/thebird/Swipe/blob/master/swipe.js
   function setTransform() {
     for (var i = 0; i < slideCount; i++ ) {
-      // We do these manually instead of loading Modernizr which is not used elsewhere
-      // - from https://github.com/thebird/Swipe/blob/master/swipe.js
-      slides[i].style.webkitTransform = 'translate(' + ((i + pos) * slides[0].offsetWidth) + 'px, 0)' + 'translateZ(0)';
+      var position = (i + pos) * slides[0].offsetWidth;
 
+      // a callback on the current slide
+      // - it can be empty, or processing some dynamic information
+      if (position == 0) {
+        callbackCurrentSlide(slides[i]);
+      }
+
+      // do the cross-browser transform
+      slides[i].style.webkitTransform = 'translate(' + (position) + 'px, 0)' + 'translateZ(0)';
       slides[i].style.MozTransform =
       slides[i].style.msTransform =
       slides[i].style.OTransform =
-      slides[i].style.transform = 'translateX(' + ((i + pos) * slides[0].offsetWidth) + 'px)';
+      slides[i].style.transform = 'translateX(' + (position) + 'px)';
     }
   }
 
@@ -144,7 +163,6 @@ var slider = function(slide, bullets) {
   function previousSlide(step) {
     pos = Math.max(pos - step, -(slideCount - 1));
     setTransform();
-    setBackgroundImage('.slider .slide');
   }
 
   // Get next slide
@@ -152,7 +170,6 @@ var slider = function(slide, bullets) {
   function nextSlide(step) {
     pos = Math.min(pos + step, 0);
     setTransform();
-    setBackgroundImage('.slider .slide');
   }
 }
 

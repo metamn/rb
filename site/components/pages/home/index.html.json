@@ -2,6 +2,16 @@
   "title": "Home",
   "slider": [
     {
+      "title": "Nightfall",
+      "titlecolor": "white",
+      "image": {
+        "title": "Nightfall",
+        "name": "nightfall-8w1",
+        "extension": ".jpg",
+        "onesize": "desktop"
+      }
+    },
+    {
       "title": "Haiku head",
       "image": {
         "title": "Haiku head",

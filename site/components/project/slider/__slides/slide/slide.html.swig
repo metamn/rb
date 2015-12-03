@@ -1,4 +1,4 @@
-<article class="slide">
+<article class="slide" data-titlecolor="{{ slide.titlecolor }}">
   <h3 class="slide__title">{{ slide.title }}</h3>
 
   {% set image = slide.image %}
