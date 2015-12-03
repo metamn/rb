@@ -1,9 +1,11 @@
 {
   "title": "Home",
+  "collections": [
+
+  ],
   "slider": [
     {
       "title": "Nightfall",
-      "titlecolor": "white",
       "image": {
         "title": "Nightfall",
         "name": "nightfall-8w1",

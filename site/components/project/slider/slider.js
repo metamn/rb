@@ -23,7 +23,7 @@ var slider = function(slide, bullets) {
       // a callback on the current slide
       // - it can be empty, or processing some dynamic information
       if (position == 0) {
-        callbackCurrentSlide(slides[i]);
+        // callbackCurrentSlide(slides[i]);
       }
 
       // do the cross-browser transform

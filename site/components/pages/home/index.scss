@@ -8,7 +8,7 @@ html {
       .slider__bullets {
         @include slider__bullets;
         position: relative;
-        top: $lem;
+        top: $lem * 2;
         z-index: 1;
       }
 
