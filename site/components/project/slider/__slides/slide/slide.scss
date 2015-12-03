@@ -9,8 +9,13 @@
   cursor: pointer;
 
   .figure {
-    //@include figure($stretch: stretched);
     @include figure;
+
+    @include landscape {
+      &--loaded {
+        background: url(/assets/images/stripe.png);
+      }
+    }
   }
 
   &__title {
