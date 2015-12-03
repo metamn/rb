@@ -38,8 +38,7 @@
       "image": {
         "title": "Nightfall",
         "name": "nightfall-8w1",
-        "extension": ".jpg",
-        "onesize": "desktop"
+        "extension": ".jpg"
       }
     },
     {
@@ -47,8 +46,7 @@
       "image": {
         "title": "Haiku head",
         "name": "haiku-1",
-        "extension": ".jpg",
-        "onesize": "desktop"
+        "extension": ".jpg"
       }
     },
     {
@@ -56,8 +54,7 @@
       "image": {
         "title": "Play with the tormented soul's mirror",
         "name": "nagy4",
-        "extension": ".jpg",
-        "onesize": "desktop"
+        "extension": ".jpg"
       }
     },
     {
@@ -65,8 +62,7 @@
       "image": {
         "title": "Erotika",
         "name": "dsc_0007",
-        "extension": ".jpg",
-        "onesize": "desktop"
+        "extension": ".jpg"
       }
     }
   ],
