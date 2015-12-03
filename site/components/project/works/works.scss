@@ -6,6 +6,10 @@
     @include works__years;
   }
 
+  &__thumbs {
+    @include works__thumbs;
+  }
+
   &__techniques {
     @include works__techniques;
   }

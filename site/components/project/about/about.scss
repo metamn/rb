@@ -2,5 +2,9 @@
   display: flex;
   padding: $lem;
 
+  &__bio {
+    @include text-style(body-text);
+  }
+
   @include about--landscape;
 }
