@@ -1,10 +1,9 @@
 @mixin about {
   display: flex;
-  padding: $lem;
+  padding: $lem * 4 $lem;
 
   &__bio {
     @include text-style(body-text);
+    @include text-style(large-text);
   }
-
-  @include about--landscape;
 }

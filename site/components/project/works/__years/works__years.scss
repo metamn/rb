@@ -3,5 +3,8 @@
 
   .title {
     display: flex;
+    padding-bottom: $lem;
+
+    @include text-style(title);
   }
 }

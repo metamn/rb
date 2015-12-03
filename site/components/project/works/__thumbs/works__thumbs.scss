@@ -5,6 +5,9 @@
   .title {
     display: flex;
     flex-basis: 100%;
+    padding-bottom: $lem;
+
+    @include text-style(title);
   }
 
   .thumb {

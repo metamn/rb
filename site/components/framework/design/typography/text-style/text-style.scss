@@ -43,82 +43,23 @@ $text-block-width: 25em;
   // - Section titles
   @if ($variant == 'title') {
     @include font(nimbus-sans-black);
-    @include border--thick;
-    @include uppercase($lem / 8);
     
     
     
   }
   
-  // Subtitle
-  // - Section subtitles
-  @if ($variant == 'subtitle') {
-    @include font(nimbus-sans-bold);
-    @include colors(white-on-black);
-    
-    letter-spacing: 1.7px;
-    
-    
-  }
-  
-  // Menu
-  // - Navigation
-  @if ($variant == 'menu') {
-    @include font(nimbus-sans-black);
-    @include uppercase($lem / 8);
+  // Large text
+  // - Large text block
+  @if ($variant == 'large-text') {
+    @include scale(large-3);
     
     
     
-    @include mobile {
-      
-      font-size: larger;
-      
-    }
-    
-    @include mobile-and-up {
-      @include scale(large-1);
+    @include portrait {
+      @include scale(large-2);
       
       
     }
-    
-  }
-  
-  // Large 1
-  // - Large text, like one times the default
-  @if ($variant == 'large-1') {
-    @include scale(large-1);
-    
-    
-    
-  }
-  
-  // Large
-  // - Large text, like five times the default
-  @if ($variant == 'large') {
-    @include font(nimbus-sans-black);
-    @include scale(large-5);
-    
-    
-    
-  }
-  
-  // Small
-  // - Small text
-  @if ($variant == 'small') {
-    @include scale(small-1);
-    
-    
-    
-  }
-  
-  // Section title
-  // - Small text on inverted colors
-  @if ($variant == 'section-title') {
-    @include scale(small-1);
-    @include colors(white-on-black);
-    @include font(nimbus-sans-bold);
-    
-    
     
   }
   
@@ -147,70 +88,21 @@ $text-block-width: 25em;
 
 .text-style--title {
   @include font(nimbus-sans-black);
-  @include border--thick;
-  @include uppercase($lem / 8);
   
   
   
 }
 
-.text-style--subtitle {
-  @include font(nimbus-sans-bold);
-  @include colors(white-on-black);
-  
-  letter-spacing: 1.7px;
-  
-  
-}
-
-.text-style--menu {
-  @include font(nimbus-sans-black);
-  @include uppercase($lem / 8);
+.text-style--large-text {
+  @include scale(large-3);
   
   
   
-  @include mobile {
-    
-    font-size: larger;
-    
-  }
-  
-  @include mobile-and-up {
-    @include scale(large-1);
+  @include portrait {
+    @include scale(large-2);
     
     
   }
-  
-}
-
-.text-style--large-1 {
-  @include scale(large-1);
-  
-  
-  
-}
-
-.text-style--large {
-  @include font(nimbus-sans-black);
-  @include scale(large-5);
-  
-  
-  
-}
-
-.text-style--small {
-  @include scale(small-1);
-  
-  
-  
-}
-
-.text-style--section-title {
-  @include scale(small-1);
-  @include colors(white-on-black);
-  @include font(nimbus-sans-bold);
-  
-  
   
 }
 

@@ -5,6 +5,7 @@
 
   .title {
     padding-left: $lem;
+    @include text-style(title);
   }
 
   .slide {
