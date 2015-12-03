@@ -9,11 +9,7 @@ var slider = function(slide, bullets) {
 
   // callback for the current slide
   function callbackCurrentSlide(slide) {
-    var color = slide.dataset.titlecolor;
-    console.log('c:' + color);
-    if (color) {
-      slide.style.color = color;
-    }
+    // do nothing ...
   }
 
 

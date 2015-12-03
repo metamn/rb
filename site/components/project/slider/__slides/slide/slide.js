@@ -1,1 +1,1 @@
-setBackgroundImage('.slider .slide');
+imagesLoading('.slider .slide');

@@ -1,7 +1,6 @@
 @mixin slide {
   @include transition(transform);
   @include full-page;
-  @include background-image(transparent);
 
   display: flex;
   flex-direction: column;
@@ -10,11 +9,12 @@
   cursor: pointer;
 
   .figure {
-    display: none;
+    //@include figure($stretch: stretched);
+    @include figure;
   }
 
   &__title {
     display: flex;
-    padding: 0 0 $lem * 2 $lem * 2;
+    padding: $lem;
   }
 }
