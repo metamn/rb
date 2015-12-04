@@ -1,15 +1,15 @@
-@mixin works__thumbs--grid {
-  @include grid('.thumb', 3, 8, $lem, $lem);
+@mixin works__thumbs--grid($nr_of_items) {
+  @include grid('.thumb', 2, $nr_of_items, $lem, $lem);
 
   @include portrait {
-    @include grid('.thumb', 2, 8, $lem, $lem);
+    @include grid('.thumb', 1, $nr_of_items, $lem, $lem);
   }
 
   @include laptop {
-    @include grid('.thumb', 4, 8, $lem, $lem);
+    @include grid('.thumb', 3, $nr_of_items, $lem, $lem);
   }
 
   @include desktop {
-    @include grid('.thumb', 5, 8, $lem, $lem);
+    @include grid('.thumb', 4, $nr_of_items, $lem, $lem);
   }
 }

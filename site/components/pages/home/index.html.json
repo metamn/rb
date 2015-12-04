@@ -63,21 +63,6 @@
       }
     },
     {
-      "title": "Nightfall",
-      "years": ["2010", "2011", "2012", "2013", "2014", "2015"],
-      "techniques": ["painting"],
-      "thumbnail": {
-        "title": "Nightfall",
-        "name": "nightfall-8w1",
-        "extension": ".jpg",
-        "onesize": "mobile",
-        "link": {
-          "title": "Nightfall",
-          "url": "nightfall"
-        }
-      }
-    },
-    {
       "title": "Haiku Heads",
       "years": ["2014", "2015"],
       "techniques": ["painting"],
@@ -93,16 +78,17 @@
       }
     },
     {
-      "title": "Play with the tormented soul's mirror",
-      "years": ["2012", "2013", "2014"],
-      "techniques": ["etching", "canvas"],
+      "title": "Nightfall",
+      "years": ["2010", "2011", "2012", "2013", "2014", "2015"],
+      "techniques": ["painting"],
       "thumbnail": {
-        "title": "Play with the tormented soul's mirror",
-        "name": "nagy4",
+        "title": "Nightfall",
+        "name": "nightfall-8w1",
         "extension": ".jpg",
         "onesize": "mobile",
         "link": {
-          "title": "Play with the tormented soul's mirror"
+          "title": "Nightfall",
+          "url": "nightfall"
         }
       }
     },
@@ -118,6 +104,20 @@
         "link": {
           "title": "Erotika",
           "url": "erotika"
+        }
+      }
+    },
+    {
+      "title": "Play with the tormented soul's mirror",
+      "years": ["2012", "2013", "2014"],
+      "techniques": ["etching", "canvas"],
+      "thumbnail": {
+        "title": "Play with the tormented soul's mirror",
+        "name": "nagy4",
+        "extension": ".jpg",
+        "onesize": "mobile",
+        "link": {
+          "title": "Play with the tormented soul's mirror"
         }
       }
     }

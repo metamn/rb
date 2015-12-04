@@ -1,0 +1,5 @@
+@mixin list__item--portrait {
+  @include portrait {
+    margin-bottom: $lem / 4;
+  }
+}

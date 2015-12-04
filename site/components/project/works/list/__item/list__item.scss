@@ -1,0 +1,5 @@
+@mixin list__item {
+  cursor: pointer;
+
+  @include list__item--portrait;
+}

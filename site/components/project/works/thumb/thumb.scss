@@ -1,9 +1,7 @@
 @mixin thumb {
+  @include thumb--horizontal;
+  
   .figure {
     @include figure($figcaption: on);
-
-    .figcaption {
-      margin-top: $lem;
-    }
   }
 }
