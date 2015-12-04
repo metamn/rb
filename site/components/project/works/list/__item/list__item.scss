@@ -2,4 +2,12 @@
   cursor: pointer;
 
   @include list__item--portrait;
+
+  &--active {
+    @include list__item--active;
+  }
+
+  &--inactive {
+    @include list__item--inactive;
+  }
 }
