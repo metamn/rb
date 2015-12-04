@@ -1,7 +1,7 @@
-var filteredOut = [];
+var visibleItems = [];
 
 // Click on filtersID will filter itemsID
-var filter = function(filtersID, itemsID) {
+var filter = function(type, filtersID, itemsID) {
   var filters = document.querySelectorAll(filtersID);
   var items = document.querySelectorAll(itemsID);
 
@@ -9,40 +9,62 @@ var filter = function(filtersID, itemsID) {
     filters[i].addEventListener('click', clickFilter, false);
   }
 
-
   function clickFilter(event) {
-    active = this.classList.contains('list__item--active');
+    // get current filter information
     attr = this.dataset.attr;
 
-    if (active) {
-      this.classList.remove('list__item--active');
-      this.classList.add('list__item--inactive');
-      filteredOut.push(attr);
-    } else {
-      this.classList.remove('list__item--inactive');
-      this.classList.add('list__item--active');
-      filteredOut.pop(attr);
-    }
+    // mark all filters inactive
+    markAllInactive(filters, 'list__item--active');
+    visibleItems = removeAllElements(visibleItems, type);
 
+    // mark this filter active
+    this.classList.add('list__item--active');
+    visibleItems.push(attr);
+
+    // do the filtering
     doFilter();
   }
 
 
+  // Show / hide items
   function doFilter() {
-    console.log(filteredOut);
+    console.log(visibleItems);
+
     for (var i = 0; i < items.length; i++) {
+      // show all
       items[i].classList.remove('thumb--inactive');
 
-      for (var j = 0; j < filteredOut.length; j++) {
-        if (items[i].classList.contains(filteredOut[j])) {
-          items[i].classList.add('thumb--inactive');
-        }
+      // combine filters
+      // - only those items will be displayed who satisfy all filter criterias
+      var visible = true;
+
+      for (var j = 0; j < visibleItems.length; j++) {
+        visible = visible && items[i].classList.contains(visibleItems[j]);
       }
+
+      if (!visible) {
+        items[i].classList.add('thumb--inactive');
+      }
+    }
+  }
+
+
+  // Remove certain elements from an array
+  function removeAllElements(array, type) {
+    return array.filter(function(item) {
+      return (item.indexOf(type) === -1);
+    });
+  }
+
+  // Remove the active class from a series of DOM elements
+  function markAllInactive(items, klass) {
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.remove(klass);
     }
   }
 
 
 }
 
-filter('.works__techniques .list__item', '.works__thumbs .thumb');
-filter('.works__years .list__item', '.works__thumbs .thumb');
+filter('technique', '.works__techniques .list__item', '.works__thumbs .thumb');
+filter('year', '.works__years .list__item', '.works__thumbs .thumb');
