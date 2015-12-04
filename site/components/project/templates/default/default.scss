@@ -4,6 +4,10 @@ html {
   body {
     @include semantic-html5-titles;
     @include typography-reset;
-    @include text-style(default);  
+    @include text-style(default);
+
+    .link {
+      @include link(black-on-white);
+    }
   }
 }

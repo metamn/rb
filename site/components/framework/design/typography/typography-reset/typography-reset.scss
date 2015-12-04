@@ -17,7 +17,7 @@
   }
 
   // Remove the extra bottom spacing for <img> inside <a>
-  figure a {
+  figure a img {
     line-height: 0;
     display: block;
   }

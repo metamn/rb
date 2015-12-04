@@ -6,7 +6,6 @@
 {% endif %}
 
 <figure class="{{ klass }}">
-  {% if image.link %}{{ l.link(link) }}{% endif %}
 
   <!-- The default extension is .png but other formats are handled too -->
   {% set extension = '.png' %}
@@ -82,12 +81,14 @@
     <source media="(max-width: 599px)" srcset="{{ site_url }}assets/images/{{ mobile }}, {{ site_url }}assets/images/{{ mobile2x }} 2x">
     <!--[if IE 9]></video><![endif]-->
     <!-- to make it work with imagesLoaded the 'srcset' is replaced by a standard fallback 'src' -->
-    <img class="img" src="{{ site_url }}assets/images/{{ laptop }}"  alt="{{ image.title }}">
+    {% if image.link %}{{ l.link(link) }}{% endif %}
+      <img class="img" src="{{ site_url }}assets/images/{{ laptop }}"  alt="{{ image.title }}">
+    {% if image.link %}</a>{% endif %}
   </picture>
 
+
   <figcaption class="figcaption {{ figcaption_class }}">
-    {{ figcaption | safe }}
+    {% if image.link %}{{ l.link(link) }}{% endif %}{{ figcaption | safe }}{% if image.link %}</a>{% endif %}
   </figcaption>
 
-{% if image.link %}</a>{% endif %}
 </figure>

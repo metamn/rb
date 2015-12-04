@@ -1,5 +1,9 @@
 @mixin thumb {
   .figure {
     @include figure($figcaption: on);
+
+    .figcaption {
+      margin-top: $lem;
+    }
   }
 }
