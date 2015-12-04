@@ -1,3 +1,5 @@
+var filteredOut = [];
+
 // Click on filtersID will filter itemsID
 var filter = function(filtersID, itemsID) {
   var filters = document.querySelectorAll(filtersID);
@@ -15,28 +17,25 @@ var filter = function(filtersID, itemsID) {
     if (active) {
       this.classList.remove('list__item--active');
       this.classList.add('list__item--inactive');
-      doFilter(attr, 'remove');
+      filteredOut.push(attr);
     } else {
       this.classList.remove('list__item--inactive');
       this.classList.add('list__item--active');
-      doFilter(attr, 'show');
+      filteredOut.pop(attr);
     }
 
     doFilter();
   }
 
 
-  function doFilter(attr, action) {
-    console.log('filtering ...');
+  function doFilter() {
+    console.log(filteredOut);
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.remove('thumb--inactive');
 
-    for (var j = 0; j < items.length; j++) {
-      if (items[j].classList.contains(attr)) {
-        console.log('found:' + j);
-
-        if (action == 'show') {
-          items[j].classList.remove('thumb--inactive');
-        } else {
-          items[j].classList.add('thumb--inactive');
+      for (var j = 0; j < filteredOut.length; j++) {
+        if (items[i].classList.contains(filteredOut[j])) {
+          items[i].classList.add('thumb--inactive');
         }
       }
     }
