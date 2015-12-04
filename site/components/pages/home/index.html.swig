@@ -14,4 +14,7 @@
   {% set years = years %}
   {% set techniques = techniques %}
   {% include '../../project/works/works.html.swig' %}
+
+  {% set contact = contact %}
+  {% include '../../project/contact/contact.html.swig' %}
 {% endblock %}

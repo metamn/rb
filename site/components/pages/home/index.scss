@@ -20,6 +20,10 @@ html {
         @include works;
       }
 
+      .contact {
+        @include contact;
+      }
+
       @include home--portrait;
     }
   }
