@@ -1,5 +1,11 @@
 @mixin works__thumbs {
   padding: $lem;
+
+  @include png-background('stripe-gray.png');
+  @include mobile {
+    @include png-background('stripe-lightgray.png');
+  }
+  
   @include works__thumbs--grid(12);
 
   .thumb {

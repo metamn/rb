@@ -5,7 +5,7 @@
 
     &__years,
     &__techniques {
-      flex-basis: calc(50% - #{$lem * 2});
+      flex-basis: calc(50% - #{$lem * 3});
       order: 1;
     }
 

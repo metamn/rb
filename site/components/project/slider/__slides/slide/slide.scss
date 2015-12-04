@@ -13,7 +13,7 @@
     @include figure;
 
     &--loaded {
-      background: url(/assets/images/stripe.png);
+      @include png-background('stripe.png');
     }
   }
 

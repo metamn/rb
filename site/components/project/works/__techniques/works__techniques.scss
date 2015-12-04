@@ -1,6 +1,5 @@
 @mixin works__techniques {
-  padding: $lem;
-  padding-top: $lem * 2;
+  padding: $lem * 2 $lem * 2 $lem $lem;
 
   .list {
     @include list;

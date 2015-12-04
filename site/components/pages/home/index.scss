@@ -7,19 +7,19 @@ html {
         top: $lem * 2;
         z-index: 1;
 
-        display: none;
+        //display: none;
       }
 
       .slider {
         @include slider;
 
-        display: none;
+        //display: none;
       }
 
       .about {
         @include about;
 
-        display: none;
+        //display: none;
       }
 
       .works {
