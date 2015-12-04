@@ -1,7 +1,11 @@
 @mixin thumb {
   @include thumb--horizontal;
-  
+
   .figure {
     @include figure($figcaption: on);
+  }
+
+  &:not(.year-2015) {
+    display: none;
   }
 }

@@ -6,14 +6,20 @@ html {
         position: relative;
         top: $lem * 2;
         z-index: 1;
+
+        display: none;
       }
 
       .slider {
         @include slider;
+
+        display: none;
       }
 
       .about {
         @include about;
+
+        display: none;
       }
 
       .works {
