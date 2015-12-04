@@ -1,6 +1,9 @@
 var visibleItems = [];
 
-// Click on filtersID will filter itemsID
+// Click on a filter with a certain type
+// - type: the css class prefix, like 'year'
+// - filtersID : all filters of the same type, like 'year-filters' etc
+// - itemsID: the items to be filtered, like 'thumbs'
 var filter = function(type, filtersID, itemsID) {
   var filters = document.querySelectorAll(filtersID);
   var items = document.querySelectorAll(itemsID);
@@ -9,6 +12,8 @@ var filter = function(type, filtersID, itemsID) {
     filters[i].addEventListener('click', clickFilter, false);
   }
 
+
+  // Click on a filter
   function clickFilter(event) {
     // get current filter information
     attr = this.dataset.attr;
@@ -28,8 +33,6 @@ var filter = function(type, filtersID, itemsID) {
 
   // Show / hide items
   function doFilter() {
-    console.log(visibleItems);
-
     for (var i = 0; i < items.length; i++) {
       // show all
       items[i].classList.remove('thumb--inactive');
