@@ -10,7 +10,6 @@ html {
 
       .slider {
         @include slider;
-        height: calc(100vh - #{$lem});
       }
 
       .about {

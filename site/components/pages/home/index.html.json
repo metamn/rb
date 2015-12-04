@@ -61,6 +61,65 @@
           "url": "erotika"
         }
       }
+    },
+    {
+      "title": "Nightfall",
+      "years": ["2010", "2011", "2012", "2013", "2014", "2015"],
+      "techniques": ["painting"],
+      "thumbnail": {
+        "title": "Nightfall",
+        "name": "nightfall-8w1",
+        "extension": ".jpg",
+        "onesize": "mobile",
+        "link": {
+          "title": "Nightfall",
+          "url": "nightfall"
+        }
+      }
+    },
+    {
+      "title": "Haiku Heads",
+      "years": ["2014", "2015"],
+      "techniques": ["painting"],
+      "thumbnail": {
+        "title": "Haiku heads",
+        "name": "haiku-1",
+        "extension": ".jpg",
+        "onesize": "mobile",
+        "link": {
+          "title": "Haiku Heads",
+          "url": "haiku-heads"
+        }
+      }
+    },
+    {
+      "title": "Play with the tormented soul's mirror",
+      "years": ["2012", "2013", "2014"],
+      "techniques": ["etching", "canvas"],
+      "thumbnail": {
+        "title": "Play with the tormented soul's mirror",
+        "name": "nagy4",
+        "extension": ".jpg",
+        "onesize": "mobile",
+        "link": {
+          "title": "Play with the tormented soul's mirror"
+        }
+      }
+    },
+    {
+      "title": "Erotika",
+      "years": ["2015"],
+      "techniques": ["painting", "canvas"],
+      "thumbnail": {
+        "title": "Erotika",
+        "name": "dsc_0007",
+        "extension": ".jpg",
+        "onesize": "mobile",
+        "link": {
+          "title": "Erotika",
+          "url": "erotika"
+        }
+      }
     }
   ],
   "slider": [
@@ -99,6 +158,6 @@
   ],
   "about": [
     "Botond Részegh is an artist preoccupied with the human condition.",
-    "He is of Hungarian / Romanian origins and can lately be seen mostly in New York City."
+    "He is of Hungarian / Romanian origins and can be seen lately in New York City."
   ]
 }

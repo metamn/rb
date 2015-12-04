@@ -1,6 +1,7 @@
 @mixin slide {
   @include transition(transform);
   @include full-page;
+  height: 90vh;
 
   display: flex;
   flex-direction: column;
