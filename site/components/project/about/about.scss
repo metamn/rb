@@ -2,6 +2,10 @@
   display: flex;
   padding: $lem * 4 $lem;
 
+  @include mobile {
+    padding-top: $lem;
+  }
+
   &__bio {
     @include text-style(body-text);
     @include text-style(large-text);
