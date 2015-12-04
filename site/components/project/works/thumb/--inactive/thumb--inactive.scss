@@ -1,0 +1,7 @@
+@mixin thumb--inactive {
+  @include transition(all);
+
+  &--inactive {
+    display: none;
+  }
+}
