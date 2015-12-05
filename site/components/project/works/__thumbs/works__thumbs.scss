@@ -1,9 +1,7 @@
 @mixin works__thumbs {
   padding: $lem;
-
-  @include png-background('stripe.png');
-
   @include works__thumbs--grid(12);
+  @include png-background('dots.png');
 
   .thumb {
     @include thumb;
