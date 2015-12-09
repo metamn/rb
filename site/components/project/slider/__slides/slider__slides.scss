@@ -6,4 +6,10 @@
   .slide {
     @include slide;
   }
+
+  .title {
+    display: inline-flex;
+    transform: rotate(-90deg);
+    margin-top: $lem * 5;
+  }
 }
