@@ -1,23 +1,15 @@
 @mixin slide {
   @include transition(transform);
   @include full-page;
-  height: 90vh;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   cursor: pointer;
 
   .figure {
     @include figure;
-
-    &--loaded {
-      @include png-background('stripe.png');
-    }
-  }
-
-  &__title {
-    display: flex;
-    padding: $lem;
   }
 }

@@ -7,11 +7,26 @@
 @mixin slider {
   overflow: hidden;
   display: flex;
-  flex-direction: column;
 
-  height: 90vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 100vh;
+
+  position: relative;
 
   &__slides {
     @include slider__slides;
   }
+
+  &__bullets {
+    @include slider__bullets;
+    @include slider__bullets--vertical;
+
+    position: absolute;
+    right: $lem;
+    top: 45%;
+  }
+
 }

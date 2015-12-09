@@ -1,8 +1,0 @@
-@mixin home--portrait {
-  @include portrait {
-    .slider__bullets {
-      justify-content: flex-end;
-      top: $lem;
-    }
-  }
-}
