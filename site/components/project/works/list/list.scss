@@ -1,7 +1,6 @@
 @mixin list {
   display: flex;
-  flex-direction: column;
-  
+
   &__item {
     @include list__item;
   }

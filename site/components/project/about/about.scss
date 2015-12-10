@@ -1,10 +1,9 @@
 @mixin about {
   display: flex;
-  padding: $lem * 4 $lem;
+  padding: $lem;
 
   &__bio {
     @include text-style(body-text);
-    @include text-style(large-text);
 
     .p + .p {
       margin-top: 0;

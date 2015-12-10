@@ -1,21 +1,27 @@
 @mixin works {
   display: flex;
+  flex-wrap: wrap;
 
   min-height: 100vh;
   align-items: center;
-  padding: $lem * 2 0;
+  justify-content: space-around;
 
-  &__years {
-    @include works__years;
+  padding: $lem * 2 0;
+  @include png-background('dots.png');
+
+  &__years,
+  &__techniques {
+    display: none;
+    padding: $lem;
+
+    .list {
+      @include list;
+    }
   }
 
   &__thumbs {
     @include works__thumbs;
+    flex-basis: 100%;
   }
 
-  &__techniques {
-    @include works__techniques;
-  }
-
-  @include works--mobile;
 }

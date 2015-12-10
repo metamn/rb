@@ -6,4 +6,10 @@
 @mixin html-css-reset {
   @include normalize;
   @include flexbox-bugfix;
+
+  .link .img,
+  a img {
+    display: block;
+    line-height: 0;
+  }
 }

@@ -3,6 +3,21 @@
   @include thumb--inactive;
 
   .figure {
-    @include figure($figcaption: on);
+    @include figure;
+    @include transition(all);
+
+    &:hover {
+      transform: scale(1.1);
+
+      .figcaption {
+        display: flex;
+        align-items: flex-end
+
+        .link {
+          padding: $lem;
+          @include colors(white-on-black);
+        }
+      }
+    }
   }
 }

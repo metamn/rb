@@ -1,7 +1,3 @@
 @mixin contact {
-  @include text-style(large-text);
-
-  .link {
-    word-wrap: break-word;
-  }
+  padding: $lem;
 }
